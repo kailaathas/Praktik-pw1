@@ -22,7 +22,7 @@ if(($username == $username_valid) && ($password == $password_valid)){
   ];
 
   //jika benar
-  echo "Selamat datang: " . $username. ', anda telah login sebanyak: ' . count($_SESSION['login']) . ' kali';
+  echo "Selamat datang: " . $username. ', anda login sebanyak: ' . count($_SESSION['login']) . ' kali';
 
   echo '<br>';
   echo '<a href="logout.php">logout</a>';
