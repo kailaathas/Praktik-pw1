@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Halaman Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style type="text/css">
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        form{
+            border-radius: 10px;
+            background-color: rgb(25, 231, 159);
+            color: white;
+        }
+        .tombol-login{
+            margin-top: 10px;
+          
+        }
+        .warna-merah{
+            background-color: #ff0000;
+        }
+        button{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form class="border border-success border-3 p-5" method="POST" action="login.php">
+            <img src="https://unnes.ac.id/wp-content/uploads/2022/11/logo-unnes-horizontal-white-yellow.png" style="width: 200px;"/>
+            <p style="text-align: center; font-size: 28px; margin-top: 20px;">LOGIN</p>
+
+            <label class="form-label" > Username:</label>
+            <input name="username" type="text" class="form-control" > <!-- username -->
+
+            <label class="form-label">Password:</label>
+            <input name="password" type="password" class="form-control" style="margin-bottom: 10px" > <!-- password -->
+            
+            <input type="checkbox" name="remember" class="form-check-input" > Remember Me
+            <button type="submit" class="btn btn-success tombol-login warna-merah">Login</button>
+        </form>
+    </div>
+</body>
+</html>
