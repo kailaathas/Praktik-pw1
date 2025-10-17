@@ -33,4 +33,3 @@ if(($username == $username_valid) && ($password == $password_valid)){
   //jika salah
   echo "Username atau Password salah";
 }
-
